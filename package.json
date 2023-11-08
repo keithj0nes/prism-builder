@@ -9,15 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "next": "latest",
     "react": "latest",
+    "react-currency-input-field": "^3.6.11",
     "react-dom": "latest",
-    "next": "latest"
+    "use-font-face-observer": "^1.2.1"
   },
   "devDependencies": {
     "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
   }
 }

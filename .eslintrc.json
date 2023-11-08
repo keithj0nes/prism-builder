@@ -1,3 +1,39 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "airbnb"],
+  // "extends": "next",
+  "rules": {
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/react-in-jsx-scope": "off",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0 }],
+    "react/jsx-filename-extension": "off",
+    // "import/extensions": ["error", "ignorePackages", { "": "never" }],
+    "import/extensions": ["off", { "<js>": "always" }],
+    "react/no-invalid-html-attribute": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/forbid-prop-types": "off",
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "object-curly-newline": ["off", {
+        "ObjectExpression": "never",
+        "ObjectPattern": { "multiline": true },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+    }],
+    "react/jsx-one-expression-per-line": "off",
+    "max-len": "off",
+    "import/no-extraneous-dependencies": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "import/no-unresolved": "off",
+    "jsx-a11y/label-has-associated-control": [ 2, {
+        "labelComponents": ["CustomInputLabel"],
+        "labelAttributes": ["label"],
+        "controlComponents": ["CustomInput"]
+        // "depth": 3
+    }],
+    "camelcase": "off"
+  }
 }
